@@ -1,28 +1,40 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-<meta charset="UTF-8">
+
 <title>ClawENS</title>
+
 <link rel="stylesheet" href="style.css">
-<script src="https://cdn.jsdelivr.net/npm/ethers@6.6.2/dist/ethers.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/ethers@6.7.0/dist/ethers.min.js"></script>
+
 </head>
 
 <body>
 
-<div class="container">
+<header>
 
 <h1>ClawENS</h1>
-<p>Register your .claw identity</p>
 
-<input id="domain" placeholder="name.claw">
+<button id="connect">Connect Wallet</button>
 
-<button onclick="checkDomain()">Check</button>
-<button onclick="connectWallet()">Connect Wallet</button>
+</header>
 
-<div id="result"></div>
+<div class="hero">
+
+<h2>Your Web3 identity</h2>
+
+<input id="domain" placeholder="search name.claw">
+
+<button onclick="search()">Search</button>
 
 </div>
 
-<script src="script.js"></script>
+<div id="result"></div>
+
+<script src="search.js"></script>
+
 </body>
+
 </html>
